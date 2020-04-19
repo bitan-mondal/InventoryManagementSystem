@@ -19,7 +19,7 @@ class Chair:
         val = (self.item_id,)
         cursor.execute(sql,val)
         record = cursor.fetchone()
-        print('The following data hs been added:\n\n   Item ID | Item Name |Company Name| Model|       HSN    |     RATE\n  ')
+        print('The following data hs been a dded:\n\n   Item ID | Item Name |Company Name| Model|       HSN    |     RATE\n  ')
         print(' {0[0]:15s} {0[1]:10s} {0[2]:10s} {0[3]:10s} {0[4]:10s} {0[5]:10f}'.format(record))
         db.commit()
 
