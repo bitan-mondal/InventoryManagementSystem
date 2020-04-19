@@ -6,7 +6,6 @@ import pyfiglet
 """It generates Item_ID through random function whenever we need to insert a new row in the Database"""
 
 def genID():
-    print("gen id")
     lettersAndDigits = string.ascii_lowercase + string.digits
     return ''.join((random.choice(lettersAndDigits) for i in range(10)))
 
