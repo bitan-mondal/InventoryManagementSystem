@@ -156,7 +156,28 @@ class Factory():
             print("Item not found!\n")
         else:
             print("\n   Item ID | Item Name |Company Name| Model|       HSN    |     RATE\n")
-            print(' {0[0]:15s} {0[1]:10s} {0[2]:10s} {0[3]:10s} {0[4]:10s} {0[5]:10f}'.format(record)) 
+            print(' {0[0]:15s} {0[1]:10s} {0[2]:10s} {0[3]:10s} {0[4]:10s} {0[5]:10f}'.format(record))
+
+    def list_db_all(self):
+        """
+        Descripton: 
+            This method takes input from customer and list the data from the Database according to Item ID
+        Input Parameters:  
+            NA
+        Output: 
+            The content of database
+        """
+        sql = 'select * from test.stocks;'
+        self.cursor.execute(sql)
+        record = self.cursor.fetchall()
+
+        if not record:
+            print("Item not found!\n")
+        else:
+            print("\n   Item ID | Item Name |Company Name| Model|       HSN    |     RATE\n")
+            for row in record:
+                print(' {0[0]:15s} {0[1]:10s} {0[2]:10s} {0[3]:10s} {0[4]:10s} {0[5]:10f}'.format(row))
+
     
     def update_db(self,item_id,new_item_value,to_update):
         """
@@ -202,7 +223,7 @@ class Factory():
         self.cursor.execute(sql,val)
         record = self.cursor.fetchone()
         if not record:
-            return 0
+            return None
         else:
             return 1
 
@@ -219,7 +240,13 @@ if __name__ == "__main__":
 
     while True:
 
-        print("\n• Press [1] to List all details of an item \n• Press [2] to Update details of an item\n• Press [3] to Delete an item\n• Press [4] to Add details of an item\n• Press [0] to Exit\n")
+        print("\n \
+        • Press [1] to List all details of an item \n \
+        • Press [2] to Update details of an item\n \
+        • Press [3] to Delete an item\n \
+        • Press [4] to Add details of an item\n \
+        • Press [5] to List details of all items\n \
+        • Press [0] to Exit\n")
         choice = int(input("Enter your choice: "))
         if choice==0:
             break
@@ -283,6 +310,11 @@ if __name__ == "__main__":
 
             itemObj = factoryObj.insert_db(m_item_name,m_company_name,m_model_name,m_hsn,m_rate)
             itemObj.populate(factoryObj.getDBCursor(),factoryObj.getDBConnection())
+        
+        #-------------------------------- LIST ALL ITEMS --------------------------------#
+        # Choice [5] : Condition to List details of all Items.
+        elif choice == 5:
+            factoryObj.list_db_all()
         else:
         # Choice [0] : Condition to Exit from the menu
             break
