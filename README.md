@@ -28,8 +28,10 @@
 
 * Python 3 and MySQL Database
 
-## Installation Guide
-* Download and Install MySql Database and Setup the Database [link](https://dev.mysql.com/downloads/installer/)
-* Import the shared database file from the repository
-* Change the User ID and Password in the method "get_db_connection" in Services.py file
-* Run Hive_IMS.py file to execute the code in CLI
+## Installation and usage Guide
+1. Download and install Python 3 [link](https://www.python.org/downloads/)
+2. Download and install MySql Database and Setup the Database [link](https://dev.mysql.com/downloads/installer/)
+3. Import the shared database file "test_stocks0.sql" from the repository [link](https://github.com/bitan-mondal/InventoryManagementSystem/blob/master/test_stocks0.sql)
+4. Clone the repository to your local folder
+4. Change the User ID and Password in the method `get_db_connection` in Services.py file with your Database user id and password
+5. Open command prompt in your local repository and type `python main.py` to run the code
