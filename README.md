@@ -35,3 +35,27 @@
 4. Clone the repository to your local folder
 4. Change the User ID and Password in the method `get_db_connection` in Services.py file with your Database user id and password
 5. Open command prompt in your local repository and type `python main.py` to run the code
+
+# Snapshot of Running Product
+## Welcome Menu
+![](HIVE_IMS_Product_Images/Welcome_Menu.jpg)
+## Option [1] to List all the details of an item
+![](HIVE_IMS_Product_Images/Option_1.jpg)
+## Option [2] to Update details of an item
+![](HIVE_IMS_Product_Images/Option_2.jpg)
+## Option [3] to Delete an item
+![](HIVE_IMS_Product_Images/Option_3.jpg)
+## Option [4] to Add details of an item
+![](HIVE_IMS_Product_Images/Option_4.jpg)
+## Option [5] to List details of all item
+![](HIVE_IMS_Product_Images/Option_5.jpg)
+## Option [0] to Exit
+![](HIVE_IMS_Product_Images/Option_0.jpg)
+
+# Snapshot of MySQL Database
+## MySQL Database
+![](HIVE_IMS_Product_Images/MySQL_DB.jpg)
+
+
+
+
