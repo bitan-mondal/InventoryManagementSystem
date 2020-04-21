@@ -40,21 +40,21 @@
 ## Welcome Menu
 ![](HIVE_IMS_Product_Images/Welcome_Menu.jpg)
 ## Option [1] to List all the details of an item
-![](HIVE_IMS_Product_Images/Option_1.jpg)
+![](HIVE_IMS_Product_Images/Option_1.JPG)
 ## Option [2] to Update details of an item
-![](HIVE_IMS_Product_Images/Option_2.jpg)
+![](HIVE_IMS_Product_Images/Option_2.JPG)
 ## Option [3] to Delete an item
-![](HIVE_IMS_Product_Images/Option_3.jpg)
+![](HIVE_IMS_Product_Images/Option_3.JPG)
 ## Option [4] to Add details of an item
-![](HIVE_IMS_Product_Images/Option_4.jpg)
+![](HIVE_IMS_Product_Images/Option_4.JPG)
 ## Option [5] to List details of all item
-![](HIVE_IMS_Product_Images/Option_5.jpg)
+![](HIVE_IMS_Product_Images/Option_5.JPG)
 ## Option [0] to Exit
-![](HIVE_IMS_Product_Images/Option_0.jpg)
+![](HIVE_IMS_Product_Images/Option_0.JPG)
 
 # Snapshot of MySQL Database
 ## MySQL Database
-![](HIVE_IMS_Product_Images/MySQL_DB.jpg)
+![](HIVE_IMS_Product_Images/MySQL_DB.JPG)
 
 
 
