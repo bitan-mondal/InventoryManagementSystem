@@ -3,7 +3,7 @@
 ## Info
 
 * It is an "**Inventory Management System**"
-* A system which has different stock categories and helps to manage stock data's efficiently using CRUD feature for persistent storage
+* A system which has different stock categories and helps to manage stock data efficiently using CRUD feature for persistent storage
 * Used Python as the primary coding language to build the system and MySQL Database to manage the data
 
 ## Design Pattern
